@@ -39,3 +39,12 @@ function refocus_real_focus_buttons($atts = [], $content = null)
 }
 
 add_shortcode('button', 'refocus_real_focus_buttons');
+
+
+add_shortcode('button', 'fps_buttons');
+
+function refocus_displaydate()
+{
+    return date('Y');
+}
+add_shortcode('date', 'refocus_displaydate');

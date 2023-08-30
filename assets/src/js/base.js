@@ -18,4 +18,16 @@ import "slick-carousel/slick/slick-theme.css";
         autoplay: true,
         speed: 500,
     });
+
+    const header = document.querySelector(".page-header");
+    const toggleClass = "is-sticky";
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 150) {
+            header.classList.add(toggleClass);
+        } else {
+            header.classList.remove(toggleClass);
+        }
+    });
 })(jQuery);

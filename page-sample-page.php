@@ -32,7 +32,7 @@ get_header(); ?>
 
 <div class="flex items-center justify-center">
 
-    <?php refocus - real - focus_get_social_icons(); ?>
+    <? phprefocus_real_focus_get_social_icons(); ?>
 
 </div>
 

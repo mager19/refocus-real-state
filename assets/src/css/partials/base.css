@@ -848,3 +848,96 @@ blockquote {
         }
     }
 }
+
+.overlay {
+    @apply absolute top-0 left-0 h-full w-full;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title_with_before {
+    @apply relative pb-8 lg:pb-14 mb-0;
+
+    &:after {
+        @apply bg-primary w-15 h-0.5 absolute bottom-0 flex;
+        content: "";
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+.home__hero {
+    @apply relative;
+
+    .arrow-down {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 81px;
+        height: 36px;
+        position: absolute;
+        background: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 81 36' style='enable-background:new 0 0 81 36;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Ctitle%3E%3C/title%3E%3Cg id='icomoon-ignore'%3E%3C/g%3E%3Cpath class='st0' d='M0,0l0,36h81V0C73.7,41.3,14.1,50.5,0,0z'/%3E%3C/svg%3E%0A")
+            0 0/100% auto no-repeat;
+
+        a {
+            @apply absolute;
+            color: #fff;
+            font-size: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -1px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 9999px;
+            top: 0;
+            bottom: -2px;
+            background: #fff;
+            right: 100%;
+            margin-right: -1px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 9999px;
+            top: 0;
+            bottom: -2px;
+            background: #fff;
+            left: 100%;
+            margin-left: -1px;
+        }
+    }
+}
+
+p.has-text-align-center {
+    @apply lg:max-w-5xl;
+}
+
+.site__nav--main {
+    ul {
+        li {
+            @apply mb-0;
+            a {
+                @apply duration-200 transition-all ease-linear;
+                color: #fff !important;
+                font-weight: 300 !important;
+                text-decoration: none !important;
+
+                &:hover {
+                    font-weight: 500 !important;
+                }
+            }
+        }
+    }
+}
+.site-footer {
+    a {
+        @apply text-dark-2 hover:text-white visited:text-dark-2;
+    }
+}
+
+.logofooter {
+    @apply text-white !important;
+}

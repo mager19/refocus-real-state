@@ -1,7 +1,7 @@
 <?php
 if (function_exists('refocus_real_focus__authorField')) :
 
-    refocus - real - focus__authorField(array(
+    refocus_real_focus__authorField(array(
         'key' => 'group_5b3f98550147d',
         'title' => 'Author Fields',
         'fields' => array(

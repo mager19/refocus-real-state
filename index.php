@@ -34,7 +34,7 @@ get_header(); ?>
 
         <!-- Pagination -->
         <div class="pagination">
-            <?php refocus - real - focus__pagination($posts->max_num_pages, "", $paged); ?>
+            <? phprefocus_real_focus__pagination($posts->max_num_pages, "", $paged); ?>
         </div>
         <!-- End Pagination -->
     </div>

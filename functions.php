@@ -33,12 +33,26 @@ require('inc/cta-post-type.php');
 
 
 if (function_exists('acf_add_options_page')) {
-	acf_add_options_page(array(
-		'page_title'  => __('Theme Options'),
-		'menu_title'  => __('Theme Options'),
-		'redirect'    => false,
-	));
+    acf_add_options_page(array(
+        'page_title'  => __('Theme Options'),
+        'menu_title'  => __('Theme Options'),
+        'redirect'    => false,
+    ));
 }
 
 /** ACF Custom functions **/
 require('inc/functions/custom-functions.php');
+
+function add_file_types_to_uploads($file_types)
+{
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes);
+    return $file_types;
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+/**
+ * Register ACF Blocks
+ */
+require get_template_directory() . '/blocks/register-blocks.php';

@@ -1,0 +1,168 @@
+{
+    "__generated__": "⚠️ This file is generated. Do not edit.",
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": true,
+            "customDuotone": false,
+            "customGradient": false,
+            "defaultDuotone": false,
+            "defaultGradients": false,
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "name": "dark-1",
+                    "slug": "dark-1",
+                    "color": "#464646"
+                },
+                {
+                    "name": "dark-2",
+                    "slug": "dark-2",
+                    "color": "#6c6c6c"
+                },
+                {
+                    "name": "dark-3",
+                    "slug": "dark-3",
+                    "color": "#4f658f"
+                },
+                {
+                    "name": "light-1",
+                    "slug": "light-1",
+                    "color": "#f8f8f8"
+                },
+                {
+                    "name": "black",
+                    "slug": "black",
+                    "color": "#000"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "100%"
+        },
+        "custom": {
+            "spacing": {},
+            "typography": {
+                "font-size": {},
+                "line-height": {}
+            }
+        },
+        "spacing": {
+            "padding": true,
+            "units": ["px", "%", "rem", "vw", "vh"]
+        },
+        "typography": {
+            "customFontSize": true,
+            "fontFamilies": [
+                {
+                    "name": "Helvetica",
+                    "slug": "sans",
+                    "fontFamily": "Helvetica,sans-serif"
+                },
+                {
+                    "name": "Karbon",
+                    "slug": "heading",
+                    "fontFamily": "Karbon,sans-serif"
+                },
+                {
+                    "name": "Montserrat",
+                    "slug": "inter",
+                    "fontFamily": "Montserrat,serif"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "display1",
+                    "slug": "display1",
+                    "size": "6rem"
+                },
+                {
+                    "name": "h1",
+                    "slug": "h1",
+                    "size": "4rem"
+                },
+                {
+                    "name": "h2",
+                    "slug": "h2",
+                    "size": "3rem"
+                },
+                {
+                    "name": "h3",
+                    "slug": "h3",
+                    "size": "2.25rem"
+                },
+                {
+                    "name": "h4",
+                    "slug": "h4",
+                    "size": "2rem"
+                },
+                {
+                    "name": "titleL",
+                    "slug": "titleL",
+                    "size": "1.5rem"
+                },
+                {
+                    "name": "titleM",
+                    "slug": "titleM",
+                    "size": "1.25rem"
+                },
+                {
+                    "name": "titleS",
+                    "slug": "titleS",
+                    "size": "1rem"
+                },
+                {
+                    "name": "bodyL",
+                    "slug": "bodyL",
+                    "size": "1.125rem"
+                },
+                {
+                    "name": "bodyM",
+                    "slug": "bodyM",
+                    "size": "1rem"
+                },
+                {
+                    "name": "bodyM_bold",
+                    "slug": "bodyM_bold",
+                    "size": "1rem"
+                },
+                {
+                    "name": "bodyM_italic",
+                    "slug": "bodyM_italic",
+                    "size": "1rem"
+                },
+                {
+                    "name": "bodyS",
+                    "slug": "bodyS",
+                    "size": "0.875rem"
+                },
+                {
+                    "name": "bodyXs",
+                    "slug": "bodyXs",
+                    "size": "0.75rem"
+                },
+                {
+                    "name": "overline",
+                    "slug": "overline",
+                    "size": "1.5rem"
+                },
+                {
+                    "name": "overlineS",
+                    "slug": "overlineS",
+                    "size": "0.875rem"
+                },
+                {
+                    "name": "navigation",
+                    "slug": "navigation",
+                    "size": "1rem"
+                },
+                {
+                    "name": "button",
+                    "slug": "button",
+                    "size": "1rem"
+                }
+            ]
+        }
+    }
+}

@@ -7,15 +7,17 @@ const TerserPlugin = require("terser-webpack-plugin");
 // change these variables to fit your project
 const jsPath = "./assets/src/js";
 const outputPath = "./assets/dist";
-const localDomain = "https://refocus-real-state.local/";
+const localDomain = "http://localhost:10058/";
 const entryPoints = {
     // 'app' is the output name, people commonly use 'bundle'
     // you can have more than 1 entry point
     app: jsPath + "/index.js",
+    editor: "./assets/src/css/editor.css",
 };
 
 module.exports = {
     entry: entryPoints,
+    devtool: "source-map",
     output: {
         path: path.resolve(__dirname, outputPath),
         filename: "./js/[name].js",

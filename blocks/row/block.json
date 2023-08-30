@@ -1,0 +1,19 @@
+{
+    "name": "row",
+    "title": "Row - Custom",
+    "description": "Block Row",
+    "category": "refocusBlocks",
+    "apiVersion": 2,
+    "icon": "menu-alt2",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/row/block.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true,
+        "color": {
+            "background": true
+        }
+    }
+}

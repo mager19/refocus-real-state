@@ -1,0 +1,35 @@
+.page-header.is-sticky {
+    @apply bg-secondary;
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+}
+
+.page-header.is-sticky img {
+    max-width: 80%;
+}
+
+.page-header.is-sticky button {
+    font-size: 14px;
+    padding: 7px 10px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-70%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.page-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: transparent;
+}

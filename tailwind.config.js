@@ -1,28 +1,35 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-    content: ["./*.php", "./*/*.php", "./assets/**/*.js"],
+    content: [
+        "./*.php",
+        "./*/*.php",
+        "./assets/**/*.js",
+        "./blocks/**/*.{php,js}",
+    ],
+
+    safelist: ["bg-light-1"],
 
     theme: {
         extend: {
             colors: {
                 dark: {
-                    1: "#031b4c",
-                    2: "#2b426f",
+                    1: "#464646",
+                    2: "#6c6c6c",
                     3: "#4f658f",
                 },
                 light: {
-                    1: "#f6f9fd",
+                    1: "#f8f8f8",
                     2: "#e7ebf3",
                     3: "#92a8d1",
                 },
                 primary: {
-                    DEFAULT: "#E86969",
+                    DEFAULT: "#3b97d3",
                     hover: "#D65959",
                     lighter: "#F19898",
                 },
                 secondary: {
-                    DEFAULT: "#111F4D",
+                    DEFAULT: "#233e52",
                     hover: "#374678",
                     lighter: "#071133",
                 },
@@ -41,7 +48,7 @@ module.exports = {
             },
         },
         fontFamily: {
-            inter: "Inter",
+            inter: "Montserrat, serif",
         },
         fontSize: {
             display1: [
@@ -56,7 +63,6 @@ module.exports = {
                 "4rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "600",
                     lineHeight: "4.375rem",
                 },
             ],
@@ -64,7 +70,6 @@ module.exports = {
                 "3rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "600",
                     lineHeight: "3.25rem",
                 },
             ],
@@ -72,15 +77,13 @@ module.exports = {
                 "2.25rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "700",
-                    lineHeight: "2.6875rem",
+                    lineHeight: "3.5rem",
                 },
             ],
             h4: [
                 "2rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "700",
                     lineHeight: "2.625rem",
                 },
             ],
@@ -88,15 +91,13 @@ module.exports = {
                 "1.5rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "700",
                     lineHeight: "2rem",
                 },
             ],
             titleM: [
-                "1.125rem",
+                "1.25rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "700",
                     lineHeight: "1.25rem",
                 },
             ],
@@ -104,7 +105,6 @@ module.exports = {
                 "1rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "700",
                     lineHeight: "1.25rem",
                 },
             ],
@@ -121,7 +121,7 @@ module.exports = {
                 "1rem",
                 {
                     fontFamily: "inter",
-                    fontWeight: "400",
+                    fontWeight: "300",
                     lineHeight: "1.625rem",
                 },
             ],
@@ -205,7 +205,7 @@ module.exports = {
                         maxWidth: "720px",
                     },
                     "@screen lg": {
-                        maxWidth: "960px",
+                        maxWidth: "1140px",
                     },
                     "@screen xl": {
                         maxWidth: "1140px",

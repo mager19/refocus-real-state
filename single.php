@@ -22,7 +22,7 @@ get_header(); ?>
                     <?php the_post_thumbnail(); ?>
                     <?php
                     the_content();
-                    echo refocus - real - focus__socialShare();
+                    echorefocus_real_focus__socialShare();
                     ?>
 
                     <div class="entry-author mt-8">
